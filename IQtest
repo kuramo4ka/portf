@@ -1,0 +1,8 @@
+function iqTest(numbers){
+  let tmp = numbers.split(' '),
+      even = tmp.map(a => {if(a % 2 == 0) return a}),
+      odd = tmp.map(a => {if(a % 2 != 0) return a});
+      if(even.filter(x => x === undefined).length === 1)
+        return even.indexOf(undefined) + 1;
+      else return odd.indexOf(undefined) + 1;
+}
