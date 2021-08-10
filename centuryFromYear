@@ -1,0 +1,4 @@
+function century(year) {
+  if ((year - Math.round(year / 100) * 100) >= 1) return Math.round(year / 100)  + 1;
+  else return Math.round(year / 100);
+}
