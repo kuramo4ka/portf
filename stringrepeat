@@ -1,0 +1,7 @@
+function repeatStr (n, s) {
+  let tmp = []
+  for (let i = 0; i < n; i++){
+    tmp.push(s);
+  }
+  return tmp.join('');
+}
